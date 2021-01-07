@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<form id=order>
+	<fieldset>
+		<h3>Step 1: Your details</h3>
+		<ol>
+			<li>
+				<label for=name>Name</label>
+				<input id=name name=name type=text placeholder="First and last name">
+			</li>
+			<li>
+				<label for=email>Email</label>
+				<input id=email name=email type=email placeholder="example@domain.com">
+			</li>
+			<li>
+				<label for=phone>Phone</label>
+				<input id=phone name=phone type=tel placeholder="Eg. +447500000000">
+			</li>
+		</ol>
+	</fieldset>
+	<fieldset>
+		<h3>Step 2: Delivery address</h3>
+		<ol>
+			<li>
+				<label for=address>Address</label>
+				<textarea id=address name=address rows=5></textarea>
+			</li>
+			<li>
+				<label for=postcode>Post code</label>
+				<input id=postcode name=postcode type=text>
+			</li>
+			<li>
+				<label for=country>Country</label>
+				<input id=country name=country type=text>
+			</li>
+		</ol>
+	</fieldset>
+	<fieldset>
+		<h3>Step 3: Card details</h3>
+		<ol>		
+			<li>
+				<fieldset>
+					<h4>Card type</h4>
+					<ol>
+						<li>
+							<input id=visa name=cardtype type=radio>
+							<label for=visa>VISA</label>
+						</li>
+						<li>
+							<input id=amex name=cardtype type=radio>
+							<label for=amex>AmEx</label>
+						</li>
+						<li>
+							<input id=mastercard name=cardtype type=radio>
+							<label for=mastercard>Mastercard</label>
+						</li>
+					</ol>
+				</fieldset>
+			</li>
+			<li>
+				<label for=cardnumber>Card number</label>
+				<input id=cardnumber name=cardnumber type=number required>
+			</li>
+			<li>
+				<label for=secure>Security code</label>
+				<input id=secure name=secure type=number required>
+			</li>
+			<li>
+				<label for=namecard>Name on card</label>
+				<input id=namecard name=namecard type=text placeholder="Exact name as on the card" required>
+			</li>
+		</ol>
+	</fieldset>
+    </body>
+	<fieldset>
+		<button type=submit>Buy it!</button>
+	</fieldset>
+</form>
+</html>
+
+
+
+<style>
+        html, body, h3, h4, form, fieldset, ol, li {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: white;
+            color: black;
+            font-family: "Times New Roman";
+            padding: 20px;
+        }
+
+form#order {
+	background: darkolivegreen;
+	border-radius: 5px;
+	padding: 20px;
+	width: 400px;
+}
+
+form#order fieldset {
+	border: none;
+    margin-bottom: 10px;
+}
+form#order fieldset:last-of-type {
+	margin-bottom: 0;
+}
+
+form#order ol li {
+	background: #b9cf6a;
+	background: rgba(255,255,255,.3);
+	border-color: #e3ebc3;
+	border-color: rgba(255,255,255,.6);
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	border-radius: 5px;
+	border-radius: 5px;
+	line-height: 30px;
+	list-style: none;
+	padding: 5px 10px;
+	margin-bottom: 2px;
+}
+form#order ol ol li {
+	background: none;
+	border: none;
+	float: left;
+}
+
+form#order label {
+	float: left;
+	font-size: 13px;
+	width: 110px;
+}
+form#order fieldset fieldset label {
+	background:none no-repeat left 50%;
+	line-height: 20px;
+	padding: 0 0 0 30px;
+	width: auto;
+}
+
+form#order input:not([type=radio]),
+form#order textarea {
+	background: #ffffff;
+	border: none;
+	border-radius: 3px;
+	border-radius: 3px;
+	border-radius: 3px;
+	border-radius: 3px;
+	font: italic 13px "Times New Roman";
+	outline: none;
+	padding: 5px;
+	width: 200px;
+}
+
+form#order button {
+	background: #384313;
+	border: none;
+	border-radius: 20px;
+	border-radius: 20px;
+	border-radius: 20px;
+	border-radius: 20px;
+	color: white;
+	display: block;
+	font: 18px "Times New Roman";
+	margin: auto;
+	padding: 7px 25px;
+	text-transform: uppercase;
+}
+
+</style>

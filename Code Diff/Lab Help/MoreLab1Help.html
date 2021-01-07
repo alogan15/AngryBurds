@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab 1</title>
+	  <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header>MyWebsite</header>
+      
+      <main>This is a Lorem Ipsum Heading</main>
+      
+      <aside>Side Bar Links</aside><br>
+      <aside>Other Widgets</aside>
+      <footer>Copyright Your Site All Rights Reserved</footer>
+    </div>
+  </body>
+</html>
+
+<style>
+
+/* ===================================== 
+     Page Styles
+  ======================================== */
+
+  
+  
+  }
+  body {
+    font-size: 1.4em;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+  .container > * {
+    
+    text-shadow: 0 2px 0 rgba(110,133,156,0.12);
+    padding: 0.85em;
+    border: solid 1px rgba(110,133,156,0.15);
+  }
+  header {
+    background-color: black;
+    color: orange;
+    font-size: 50px;
+    font-style: normal;
+  }
+  nav {
+    background-color: #fbaea8;
+  }
+  main {
+    background-color: white;  
+  }
+  aside {
+    background-color: gray;
+    color: black; 
+  }
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+  }
+  
+  
+  /* ===================================== 
+     Grid Layout
+  ======================================== */
+  
+  .container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px minmax(200px, 1fr) 100px;
+    grid-gap: 10px;
+  }
+  
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+</style>
